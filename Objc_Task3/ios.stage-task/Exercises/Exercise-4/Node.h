@@ -11,6 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Node : NSObject
 
+@property NSNumber *value;
+@property(nonatomic, strong) Node *leftChild;
+@property(nonatomic, strong) Node *rightChild;
+
+-(instancetype)initWithValue:(NSNumber*)value;
+
 @end
 
 NS_ASSUME_NONNULL_END

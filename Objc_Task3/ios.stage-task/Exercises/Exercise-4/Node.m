@@ -9,4 +9,13 @@
 
 @implementation Node
 
+- (instancetype)initWithValue:(NSNumber *)value
+{
+    self = [super init];
+    if (self) {
+        _value = value;
+    }
+    return self;
+}
+
 @end
